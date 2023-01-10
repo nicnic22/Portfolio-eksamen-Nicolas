@@ -1,0 +1,429 @@
+@font-face {
+    font-family: 'Recoleta-Bold';
+    src: url('../fonts/Recoleta-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'Basier';
+    src: url('../fonts/BasierSquare-Regular.woff');
+}
+
+@font-face {
+    font-family: 'Basier-Bold';
+    src: url('../fonts/Basier-Circle-Bold.otf');
+}
+
+body, html {
+    height: 100%;
+    box-sizing: border-box;
+    background-color: #fff;
+}
+
+html {
+    --primary-font: Recoleta-Bold;
+    --secondary-font: Basier;
+    --secondary-font-bold: Basier-Bold;
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.wrapper {
+    height: auto;
+}
+
+h1 {
+    font-size: 6rem;
+    color: #fff;
+    font-family: var(--primary-font);
+}
+
+.h1-black {
+    font-size: 6rem;
+    color: rgb(28, 28, 28);
+    font-family: var(--primary-font);
+}
+
+.h2-black {
+    font-size: 2rem;
+    color: rgb(28, 28, 28);
+    font-family: var(--primary-font);
+    padding-top: 20px;
+}
+
+.h2-push {
+    padding-bottom: 10px;
+}
+
+p {
+    font-family: var(--secondary-font);
+    font-size: 1.5rem;
+    margin-bottom: 3%;
+}
+
+.text-center {
+    text-align: center;
+    color: #000;
+}
+
+section {
+    display: grid;
+    place-items: center;
+    align-content: center;
+}
+
+.hidden {
+    opacity: 0;
+    filter: blur(1px);
+    transition: all 2.6s;
+    transition-delay: 400ms;
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+}
+
+.white {
+    color: #fff;
+}
+
+.dot {
+    color: #fff;
+    padding-top: 4px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+ul li {
+    color: #fff;
+    font-family: var(--secondary-font-bold);
+}
+
+a {
+    text-decoration: none;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 50px 50px 0 0;
+}
+
+nav ul a {
+    padding: 4px 10px 0 9px;
+}
+
+nav ul li {
+    display: inline;
+    font-size: 24px;
+}
+
+
+nav ul a li:hover {
+    animation: color-change 1s forwards;
+  }
+  
+  @keyframes color-change {
+    100% { color: rgb(172, 172, 172); }
+  }
+
+
+.header-box {
+    height: 100vh;
+    background-color: #e44b4a;
+}
+
+.header-grid {
+    display: grid;
+    grid-auto-flow: column;
+}
+
+.front-text-box {
+    width: 40%;
+    height: auto;
+    padding: 100px 0 0 50px;
+    float: left;
+}
+
+
+
+
+
+.content {
+    height: auto;
+}
+
+
+
+
+
+
+.about-me {
+    height: auto;
+    padding: 50px 0 0 50px;
+    background: #ececec;
+}
+
+.fp-aboutme-grid {
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: center;
+    gap: 10vw;
+    padding: 20px 5vw 20px 5vw;
+}
+
+.about-me-box {
+    width: 40vw;
+}
+
+.about-me-pic {
+    width: 40vw;
+    height: 700px;
+    background-image: url("../img/me.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.portfolio-area {
+    background-color: #0d0d0d;
+    color: #fff;
+    height: 800px;
+}
+
+.fp-portfolio-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* justify-content: center; */
+    gap: 20px;
+    padding: 20px 5vw 20px 5vw;
+}
+
+.portfolio-button {
+    width: 40vw;
+    height: 400px;
+    padding: 220px 200px 220px 200px;
+}
+
+.portfolio-text {
+    /* height: 400px; */
+    padding-top: 230px;
+}
+
+
+
+
+/* FRONTPAGE PORTFOLIO BOX */
+
+.card {
+    aspect-ratio: 5 / 7;
+    background-color: rgba(255, 255, 255, 0.2);
+    position: absolute;
+    transition: transform 800ms cubic-bezier(.05, .43, .25, .95);
+}
+
+.big-card {
+    width: 30vmin;
+    border-radius: 1vmin;
+}
+
+.big-card:nth-child(1) {
+    background-image: url("../img/tema2-3-small.jpg");
+    transform: translateX(-10%) rotate(-2deg);
+}
+
+.big-card:nth-child(2) {
+    background-image: url("../img/tema4-2-small.jpg");
+    transform: translateX(10%) rotate(2deg);
+    
+}
+
+.big-card:nth-child(3) {
+    background-image: url("../img/tema5-3-small.jpg");
+    transform: translateX(10%) translateY(2%) rotate(2deg);
+}
+
+.big-card:nth-child(4) {
+    background-image: url("../img/tema6-2-small.jpg");
+    transform: translateX(13%) rotate(7deg);
+}
+
+.card-group:hover > .big-card:nth-child(1) {
+    transform: translateX(-64%) translateY(10%) rotate(14deg);
+}
+
+.card-group:hover > .big-card:nth-child(2) {
+    transform: translateX(60%) translateY(-40%) rotate(28deg);
+}
+
+.card-group:hover > .big-card:nth-child(3) {
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: translateY(10%) translateX(20%) rotate(-15deg);
+}
+
+.card-group:hover > .big-card:nth-child(4) {
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: translateY(-60%) translateX(-30%) rotate(-34deg);
+}
+
+
+
+/* PORTFOLIO PAGE */
+
+.portfolio-header-grid {
+    display: grid;
+    grid-auto-flow: column;
+    gap: 20%;
+}
+
+.arrow {
+    width: 40%;
+    height: auto;
+    padding: 200px 0 0 0;
+    float: right;
+
+    animation-name: pulsing;
+    animation-duration: 1.4s;
+}
+
+@keyframes pulsing {
+    from {
+        transform : scale(1);
+        opacity   : 1;
+    }
+    50% {
+        transform : scale(0.75);
+        opacity   : 0.25;
+    }
+    to {
+        transform : scale(1);
+        opacity   : 1;
+    }
+}
+
+.portfolio-grid-box {
+    height: auto;
+    padding: 50px;
+    background: #ececec;
+}
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.portfolio-grid-1, .portfolio-grid-2, .portfolio-grid-3, .portfolio-grid-4, .portfolio-grid-5 {
+    width: 300px;
+    height: 300px;
+    margin: auto;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid;
+}
+
+
+
+
+/* PORTFOLIO SINGLEPAGE */
+
+.sp-portfolio-box {
+    height: 34vh;
+    background-color: #e44b4a;
+}
+
+#str3 {
+    padding: 50px 0 0 0;
+    text-align: center;
+}
+
+.tema-grid  {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 20px;
+}
+
+.tema-text {
+    padding: 50px;
+}
+
+.tema-galleri-box {
+    padding: 70px 50px 50px 0;
+    display: grid;
+    grid-template-columns: 13.3vw 13.3vw  13.3vw;
+    grid-template-rows: 30vw 10vw;
+}
+
+.big-image {
+    width: 100%;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    background-color: #000;
+}
+
+.small-image1 {
+    background-color: rgb(0, 0, 0);
+}
+
+.small-image2 {
+    background-color: rgb(0, 0, 0);
+}
+
+.small-image3 {
+    background-color: rgb(0, 0, 0);
+}
+
+
+
+/* OM MIG PAGE */
+
+.cv-box {
+    padding: 10px;
+    border: 1px solid black;
+}
+
+.about-me2 {
+    height: auto;
+    padding: 20px 50px 0 50px;
+}
+
+.about-me-text2 {
+    padding-bottom: 10px;
+}
+
+.p-push {
+    margin-bottom: 1%;
+}
+
+
+
+
+
+
+
+
+
+/* FOOTER */
+
+.footer-box {
+    height: 200px;
+    color: #000;
+    background-color: #e44b4a;
+}
+
+.footer-grid {
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: center;
+    gap: 20%;
+}

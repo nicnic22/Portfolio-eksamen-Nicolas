@@ -1,0 +1,49 @@
+.ml5 {
+    position: relative;
+    font-weight: 200;
+    font-size: 3.1em;
+    color: #402d2d;
+    text-align: center;
+    margin-top: 40px;
+    padding: 0px 100px 0px 100px;
+    text-transform: uppercase;
+    color: #fff;
+  }
+  
+  .ml5 .text-wrapper {
+    position: relative;
+    /* display: inline-block; */
+    padding-top: 0.1em;
+    padding-bottom: 0.15em;
+    line-height: 1em;
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+  
+  .ml5 .line {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    height: 1.2px;
+    width: 100%;
+    background-color: #c26969;
+    transform-origin: 0.5 0;
+  }
+  
+  .ml5 .ampersand {
+    /* font-family: Cormorant-Regular; */
+    /* font-style: italic; */
+    font-weight: 400;
+    width: 1em;
+    margin-right: -0.1em;
+    margin-left: -0.1em;
+  }
+  
+  .ml5 .letters {
+    display: inline-block;
+    opacity: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+  }

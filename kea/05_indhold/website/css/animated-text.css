@@ -1,0 +1,29 @@
+.ml12 {
+    font-weight: 200;
+    font-size: 2.2em;
+    text-transform: uppercase;
+    letter-spacing: 0.32em;
+    text-align: center;
+    margin-top: 44px;
+    padding: 0px 100px 0px 100px;
+    color: #fff;
+    }
+  
+.ml12 .letter {
+    display: inline-block;
+    line-height: 2em;
+}
+
+.ml13 {
+    font-size: 1.3em;
+    text-transform: uppercase;
+    letter-spacing: 0.34em;
+    text-align: center;
+    margin-top: 25px;
+    padding: 0px 100px 0px 100px;
+    }
+  
+.ml13 .letter {
+    display: inline-block;
+    line-height: 2em;
+}

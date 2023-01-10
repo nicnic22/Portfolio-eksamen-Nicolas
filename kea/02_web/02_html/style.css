@@ -1,0 +1,35 @@
+body {
+  font-family: sans-serif;
+  line-height: 1.5;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+main {
+  max-width: 600px;
+  margin-inline: auto;
+}
+
+#h2 {
+  color: red;
+}
+
+ol {
+  padding-left: 20px;
+}
+
+ul {
+  list-style-type: disc;
+}
+
+.article-heading {
+  color: #5000ca;
+}
+
+article .highlight {
+  background: #72f1b8;
+  padding: 0.5rem;
+}

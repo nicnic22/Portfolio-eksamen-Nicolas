@@ -1,0 +1,102 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+html {
+  --bg: #e0e0e0;
+}
+
+body {
+  background: var(--bg);
+  color: #fff;
+}
+
+h1 {
+  font-size: clamp(1em, 4vw + 0.2em, 1.8em);
+  font-weight: 600;
+  margin-block-end: 0.25em;
+  text-shadow: 0 1px 1px #0004;
+}
+
+p {
+  font-size: clamp(0.75em, 2vw + 0.2em, 1em);
+  font-variation-settings: "wdth" 75;
+}
+
+.card {
+  --w: min(500px, 100% - 1rem);
+  display: grid;
+  grid: "stack";
+  inline-size: var(--w);
+  border-radius: 1rem;
+  aspect-ratio: 11 / 7;
+  min-height: 0;
+  will-change: transform;
+  background: linear-gradient(to top, #0007, 40%, transparent),
+    linear-gradient(to bottom, #77c974 30%, #f34125 0) 0 0 / 25% 100%,
+    linear-gradient(to bottom, #fad853 70%, #5f2d2e 0)
+      calc((var(--w) + 1rem) / 3) 0 / 25% 100%,
+    linear-gradient(to bottom, #f76f9f 30%, #b384cc 0)
+      calc((var(--w) + 1rem) / 3 * 2) 0 / 25% 100%,
+    linear-gradient(to bottom, #4a5bd4 70%, #2ad3f4 0) calc((var(--w) + 1rem)) 0 /
+      25% 100%;
+  background-repeat: no-repeat;
+  box-shadow: inset 0 1px 0 #fff9, 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+    0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  isolation: isolate;
+}
+
+.card > * {
+  grid-area: stack;
+}
+
+.card div {
+  padding: min(1.5em, 6%);
+  place-self: end start;
+  opacity: 0.95;
+}
+
+.card img {
+  justify-self: center;
+  background: var(--bg);
+  inline-size: clamp(75px, 35%, 15em);
+  aspect-ratio: 1;
+  border-radius: 50%;
+  display: block;
+  object-fit: cover;
+  border: min(1.1vmin, 0.75em) solid #e0e0e0;
+  box-shadow: 0 1px 0 #fff9;
+  will-change: transform;
+  transform: translateY(-45%);
+  z-index: -1;
+}
+
+body {
+  min-height: 100vh;
+  font-family: system-ui, sans-serif;
+  display: grid;
+  place-items: center;
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url("https://grainy-gradients.vercel.app/noise.svg");
+  mix-blend-mode: soft-light;
+  border-radius: inherit;
+  z-index: -1;
+}
+
+@supports not (aspect-ratio: 1) {
+  body:after {
+    content: "Opdater din browser!";
+    font-weight: 700;
+    font-size: 2.5rem;
+    color: #5000ca;
+  }
+  .card {
+    display: none;
+  }
+}

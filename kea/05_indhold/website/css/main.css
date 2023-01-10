@@ -1,0 +1,190 @@
+* {
+    margin: 0;
+}
+
+@font-face {
+    font-family: Cormorant-Regular;
+    src: url(../fonts/Cormorant-Regular.otf);
+}
+
+@font-face {
+    font-family: Cormorant-Medium;
+    src: url(../fonts/Cormorant-Medium.otf);
+}
+
+@font-face {
+    font-family: Cormorant-Bold;
+    src: url(../fonts/Cormorant-Bold.otf);
+}
+
+body {
+    background-image: url("../img/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color: #000;
+}
+
+image {
+    height: 100%;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+#wrapper {
+    height: auto;
+    width: auto;
+}
+
+h1 {
+    font-family: Cormorant-Regular;
+}
+
+#background-video {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+.white-text {
+    color: #fff;
+    font-family: 'Cormorant-Regular';
+    font-size: 1.6vw;
+    text-align: center;
+}
+
+.bg-text {
+    padding-top: 31%;
+}
+
+#menu {
+    width: auto;
+    height: 80px;
+    /* background-color: rgb(71, 96, 255); */
+}
+
+ul {
+    float: right;
+    margin: 27px 20px 0px 0px;
+}
+
+ul li {
+    display: inline;
+    margin: 8px;
+    font-family: Cormorant-Regular;
+    font-size: 24px;
+}
+
+ul li a {
+    text-decoration: none;
+    background-color: #000;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+ul li a:hover {
+    background-color: #fff;
+    color: rgb(0, 0, 0);
+}
+
+#toggle {
+    display: none;
+}
+
+.text-logo {
+    height: 4%;
+    width: 100%;
+    /* padding-top: 15px; */
+    /* padding-left: 5px; */
+}
+
+.grid-box {
+    margin: auto;
+    width: 50%;
+    padding-top: 140px;
+}
+
+.grid-box2 {
+    margin: auto;
+    width: 50%;
+    padding-top: 140px;
+}
+
+.grid_1-1-1 {
+    display: inline-grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    width: 100%;
+}
+
+.grid_1-1-1-1 {
+    display: inline-grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    width: 100%;
+}
+
+.gallery-box1 {
+    background-image: url("../img/sko.webp");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+}
+
+.gallery-box2 {
+    width: 100%;
+    height: 100%;
+}
+
+.gallery-box3 {
+    width: 100%;
+    height: 100%;
+}
+
+.gallery-box4 {
+    width: 100%;
+    height: 100%;
+}
+
+.grid-1_item-1 {
+    height: 200px;
+    width: auto;
+}
+
+.grid-1_item-2 {
+    height: 200px;
+    width: auto;
+}
+
+.grid-1_item-3 {
+    height: 200px;
+    width: auto;
+}
+
+.video {
+    text-align: center;
+    margin-top: 70px;
+}
+
+.video-youtube {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.center-text {
+    text-align: center;
+    color: #e0e0e0;
+    font-size: 1.4em;
+    font-family: 'Cormorant-Regular';
+    margin-bottom: 10px;
+}

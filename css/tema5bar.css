@@ -1,0 +1,17 @@
+@media (max-width: 1400px) {
+    .sp-portfolio-box {
+        height: 60vh;
+    }
+}
+
+@media (max-width: 1100px) {
+    .sp-portfolio-box {
+        height: 64vh;
+    }
+}
+
+@media (max-width: 600px) {
+    .sp-portfolio-box {
+        height: 50vh;
+    }
+}

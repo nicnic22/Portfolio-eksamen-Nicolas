@@ -1,0 +1,25 @@
+/*hvis skærmen er MINDRE END, eller ligmed x px*/
+@media only screen and (max-width: 800px) {
+    #monster_container, #monster_container2, #monster_container3, /* #monster_container4 ,*/ #snack_container, /* #snack_container2 ,*/ #snack_container3, #snack_container4, #snack_container5, #snack_container6 {
+        width: 16%;
+    }
+    #monster_container4, #snack_container2 {
+        width: 13%;
+    }
+}
+
+
+/*hvis skærmen er STØRRE END, eller ligmed x px*/
+@media only screen and (min-width: 1500px) {
+    .start_text {
+        margin-top: 8%;
+    }
+
+    .win_text {
+        margin-top: 8%;
+    }
+
+    .lose_text {
+        margin-top: 8%;
+    }
+}

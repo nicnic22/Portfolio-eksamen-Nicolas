@@ -1,0 +1,34 @@
+Jeg har valgt stilarten 'modernisme' og emnet 'tech' eller måske mere specifikt AI
+
+Hvis AI så køb adgang til det der sted for 9 dollars og brug AI tekst
+
+Lav wireframe (XD) -> mockup (Photoshop) -> kode
+https://careerfoundry.com/en/blog/ux-design/how-to-create-your-first-wireframe/
+
+
+
+
+Sider/under emner:
+
+1) hvad er AI
+
+2) kommer AI til at overtage tekst skrivning eller nærmere fungere som noget der assisterer
+
+3) kan du se når tekst er skrevet af AI
+
+4) hvilke andre sektorer er potentielt truet af AI
+
+5) er AI en trussel for os mennesker
+
+
+pages: index, hvad er AI, Hvor ser vi AI (sektorer), fremtiden for AI
+
+
+
+
+
+Wireframe: A wireframe is a blueprint or schematic that helps communicate the structure of your app or website to the relevant stakeholders. (skitse)
+
+Mockup: A mockup is a high-fidelity render of your design that showcases how the finished product will look. (Færdigt design)
+
+

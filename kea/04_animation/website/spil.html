@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="da">
+  <head>
+    <meta charset="utf-8">
+    <title>-</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/screen.css">
+    <link rel="stylesheet" href="https://use.typekit.net/mjn8dnv.css">
+  </head>
+
+  <body>
+
+    <div id="wrapper">
+      <header>
+        <div id="header">
+          <ul>
+            <li><a href="index.html">Forside</a></li>
+            <li><a href="spil.html">Spil</a></li>
+            <li><a href="assets.html">Assets</a></li>
+            <li><a href="ide.html">Idé</a></li>
+            <li><a href="teknik.html">Teknik</a></li>
+            <li><a href="grafik.html">Grafik</a></li>
+          </ul>
+        </div>
+      </header>
+
+      <div id="screen">
+        <div id="monster_container">
+          <div id="monster_sprite"></div>
+        </div>
+        <div id="monster_container2">
+          <div id="monster_sprite2"></div>
+        </div>
+        <div id="monster_container3">
+          <div id="monster_sprite3"></div>
+        </div>
+        <div id="monster_container4">
+          <div id="monster_sprite4"></div>
+        </div>
+
+          <div id="snack_container">
+            <div id="snack_sprite"></div>
+        </div>
+          <div id="snack_container2">
+            <div id="snack_sprite2"></div>
+        </div>
+          <div id="snack_container3">
+            <div id="snack_sprite3"></div>
+        </div>
+          <div id="snack_container4">
+            <div id="snack_sprite4"></div>
+        </div>
+          <div id="snack_container5">
+            <div id="snack_sprite5"></div>
+        </div>
+        <div id="snack_container6">
+          <div id="snack_sprite6"></div>
+      </div>
+    </div>
+
+    <div id="game_ui">
+      <div id="scoreboard">
+        <h1>Point:</h1>
+        <div id="score">0</div>
+      </div>
+      <div id="time_container">
+        <div id="time_sprite"></div>
+      </div>
+      <div id="life_board">
+        <h1>Liv:</h1>
+        <div id="liv1"><img src="produktion/heart.svg" alt="hjerte"></div>
+        <div id="liv2"><img src="produktion/heart.svg" alt="hjerte"></div>
+        <div id="liv3"><img src="produktion/heart.svg" alt="hjerte"></div>
+      </div>
+    </div> <!-- game_ui luk -->
+
+    <div id="startbox">
+      <p class="start_text">Help the astronaut get his space snacks before his oxygen runs out</p>
+      <p class="start_text2">Collect 5 space snacks to win and don't click the monsters!</p>
+      <div style="text-align: center"><button id="startbutton">Start</button></div>
+    </div>
+
+    <div id="winbox" class="remove_screen">
+      <p class="win_text">You win! :)</p>
+      <p class="win_text2">You got the space snacks. Good job!</p>
+      <div style="text-align: center"><button id="resetbuttonwin">Play again?</button></div>
+    </div>
+
+    <div id="losebox" class="remove_screen">
+      <p class="lose_text">You lose! :(</p>
+      <p class="lose_text2">You didn't get the space snacks!</p>
+      <div style="text-align: center"><button id="resetbuttonlose">Play again?</button></div>
+    </div>
+
+    </div><!-- wrapper luk -->
+    <script src="js/main.js"></script>
+    <audio src="sounds/good.mp3" id="sound_good" controls></audio>
+    <audio src="sounds/bad.mp3" id="sound_bad" controls></audio>
+    <audio src="sounds/win.mp3" id="sound_win" controls></audio>
+    <audio src="sounds/lose.mp3" id="sound_lose" controls></audio>
+  </body>
+</html>
+
+
+<!--
+
+  
+
+  LAV HTML STRUKTUR FOR SPIL (med grid sikkert)
+
+
+  FÅ FALDENDE TING TIL AT HAVE RANDOM POSITION (SE OPGAVER FRA SKOLE)
+
+  FIKS HTML SIDER
+
+  FIKS PROBLEM MED LIFE DER IKKE RESETTER
+
+  FÅ SPIL TIL AT STOPPE SÅ SNART DU HAR NOK POINT / SÅ SNART DU IKKE HAR FLERE LIV
+
+
+
+  spørgsmål/kommentarer til lærer:
+
+  hvordan kan jeg få monstre og snacks til at blive hvor de er når de bliver klikket på?
+  (Det virkede for mig på et tidspunkt men nu kan jeg ikke få det til at virke (animation freeze på container virker men så kan jeg ikke
+  køre næste animation?))
+
+  jeg kan ikke få myRand til at virke så container/sprite har random start position
+-->
